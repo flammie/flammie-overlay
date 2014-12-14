@@ -1,0 +1,5 @@
+*lttoolbox-3.3.0 (14 Dec 2014)
+
+  14 Dec 2014; Flammie Pirinen <flammie@gentoo.org> +lttoolbox-3.3.0.ebuild,
+  +metadata.xml:
+  version bump main tree lttoolbox
