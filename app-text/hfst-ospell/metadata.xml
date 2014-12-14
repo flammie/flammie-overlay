@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer>
+	<email>flammie@gentoo.org</email>
+	<description>Upstream dev, overlay maint</description>
+</maintainer>
+<longdescription>
+	HFST ospell is finite-state automata-based spell-checking library.
+</longdescription>
+<use>
+	<flag name="zip">Uses <pkg>libarchive</pkg> to compress automata</flag>
+	<flag name="xml">Uses <pkg>dev-cpp/libxmlpp</pkg> for metadata</flag>
+</use>
+</pkgmetadata>
