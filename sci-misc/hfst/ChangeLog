@@ -1,0 +1,5 @@
+*hfst-3.8.1 (14 Dec 2014)
+
+  14 Dec 2014; Flammie Pirinen <flammie@gentoo.org> +hfst-3.8.1.ebuild,
+  +metadata.xml:
+  Initial commit
