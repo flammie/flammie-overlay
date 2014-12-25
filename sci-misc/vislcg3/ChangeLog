@@ -1,0 +1,5 @@
+*vislcg3-0.9.8.10063 (25 Dec 2014)
+
+  25 Dec 2014; Flammie Pirinen <flammie@gentoo.org> +metadata.xml,
+  +vislcg3-0.9.8.10063.ebuild:
+  Initial commit for vislcg3
