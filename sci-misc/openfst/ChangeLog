@@ -2,6 +2,9 @@
 # Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  02 Jan 2015; Flammie Pirinen <flammie@gentoo.org> openfst-1.4.1.ebuild:
+  --enable-far for opengrm-ngram
+
 *openfst-1.4.1 (02 Jan 2015)
 
   02 Jan 2015; Flammie Pirinen <flammie@gentoo.org> +metadata.xml,

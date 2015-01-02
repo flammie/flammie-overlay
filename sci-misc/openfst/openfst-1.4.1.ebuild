@@ -16,3 +16,8 @@ COMMON_DEPEND=""
 # C++11
 DEPEND="${COMMON_DEPEND}"
 RDEPEND="${COMMON_DEPEND}"
+
+src_configure() {
+	# required for opengrm-ngram
+	econf --enable-far
+}
