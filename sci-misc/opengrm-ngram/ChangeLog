@@ -1,0 +1,10 @@
+# ChangeLog for sci-misc/opengrm-ngram
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*opengrm-ngram-1.2.1 (04 Jan 2015)
+
+  04 Jan 2015; Flammie Pirinen <flammie@gentoo.org>
+  +files/opengrm-ngram-automake-1.13.patch, +metadata.xml,
+  +opengrm-ngram-1.2.1.ebuild:
+  initial commit of opengrm-ngram
