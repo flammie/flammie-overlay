@@ -1,0 +1,9 @@
+# ChangeLog for sci-misc/apertium-lex-tools
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*apertium-lex-tools-0.1.0 (19 Feb 2015)
+
+  19 Feb 2015; Flammie Pirinen <flammie@gentoo.org>
+  +apertium-lex-tools-0.1.0.ebuild, +metadata.xml:
+  initial addition of apertium-lex-tools
