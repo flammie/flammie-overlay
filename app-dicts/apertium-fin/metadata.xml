@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer>
+	<email>flammie@gentoo.org</email>
+	<description>
+		Private overlay, no main tree commit rights, upstream
+		maintainer
+	</description>
+</maintainer>
+<longdescription>
+	Finnish morphological analyser for apertium. Based on omorfi data and
+	local modifications and updates.
+</longdescription>
+<!--
+<use>
+	<flag name="flag">Description of how USE='flag' affects this package</flag>
+	<flag name="userland_GNU">Description of how USERLAND='GNU' affects this
+		package</flag>
+	<flag name="aspell">Uses <pkg>app-text/aspell</pkg> for spell checking.
+		Requires an installed dictionary from <cat>app-dicts</cat></flag>
+</use>
+-->
+</pkgmetadata>

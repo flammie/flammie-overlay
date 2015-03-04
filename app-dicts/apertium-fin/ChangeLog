@@ -1,0 +1,9 @@
+# ChangeLog for app-dicts/apertium-fin
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*apertium-fin-9999 (04 Mar 2015)
+
+  04 Mar 2015; Flammie Pirinen <flammie@gentoo.org> +apertium-fin-9999.ebuild,
+  +metadata.xml:
+  initial add of apertium-fin
