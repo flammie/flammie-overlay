@@ -2,6 +2,11 @@
 # Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*vislcg3-0.9.9.10822 (30 Jun 2015)
+
+  30 Jun 2015; Flammie Pirinen <flammie@gentoo.org> +vislcg3-0.9.9.10822.ebuild:
+  version bump vislcg svn matching mailing list announcement
+
 *vislcg3-0.9.9.10800 (30 Jun 2015)
 
   30 Jun 2015; Flammie Pirinen <flammie@gentoo.org> +vislcg3-0.9.9.10800.ebuild,
