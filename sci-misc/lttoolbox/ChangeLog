@@ -1,3 +1,13 @@
+# ChangeLog for sci-misc/lttoolbox
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*lttoolbox-3.3.1 (03 Dec 2015)
+
+  03 Dec 2015; Flammie Pirinen <flammie@gentoo.org> +lttoolbox-3.3.1.ebuild,
+  lttoolbox-3.3.0.ebuild:
+  sci-misc/lttoolbox: version bump  updated the keyword lines and copyrights
+
 *lttoolbox-3.3.0 (14 Dec 2014)
 
   14 Dec 2014; Flammie Pirinen <flammie@gentoo.org> +lttoolbox-3.3.0.ebuild,
