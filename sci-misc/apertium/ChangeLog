@@ -1,3 +1,13 @@
+# ChangeLog for sci-misc/apertium
+# Copyright 1999-2015 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*apertium-3.4.0 (03 Dec 2015)
+
+  03 Dec 2015; Flammie Pirinen <flammie@gentoo.org> +apertium-3.4.0.ebuild,
+  apertium-3.3.0.ebuild:
+  sci-misc/apertium: version bump  Fixed headers for year and Id
+
 *apertium-3.3.0 (14 Dec 2014)
 
   14 Dec 2014; Flammie Pirinen <flammie@gentoo.org> +apertium-3.3.0.ebuild,
