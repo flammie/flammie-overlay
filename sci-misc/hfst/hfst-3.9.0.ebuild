@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -28,7 +28,7 @@ src_configure() {
 src_compile() {
 	default_src_compile
 	if use python ; then
-		cd "${S}/swig"
+		cd "${S}/python"
 		distutils-r1_src_compile
 	fi
 }
@@ -36,7 +36,7 @@ src_compile() {
 src_install() {
 	default_src_install
 	if use python ; then
-		cd "${S}/swig"
+		cd "${S}/python"
 		distutils-r1_src_install
 	fi
 }
