@@ -1,0 +1,11 @@
+# ChangeLog for sci-misc/ocamorph
+# Copyright 1999-2016 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*ocamorph-9999 (05 Jan 2016)
+
+  05 Jan 2016; Flammie Pirinen <flammie@gentoo.org>
+  +files/ocamorph-install-prefix.patch, +files/ocastem-install-prefix.patch,
+  +metadata.xml, +ocamorph-9999.ebuild:
+  sci-misc/ocamorph: new ebuild  only CVS sources exist, probably quite stable
+  reference though

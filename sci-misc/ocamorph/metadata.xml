@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<!--
+# $Id$
+-->
+<pkgmetadata>
+<!-- <herd>some-herd</herd> -->
+<maintainer>
+	<email>flammie@gentoo.org</email>
+  <description>Overlay maintainer without tree rights</description> 
+</maintainer>
+<longdescription>
+	This is a generic ocaml-based morphological analyser
+	system, mainly used by Hungarians for morphdb.hu, but there may be other
+	users.
+</longdescription>
+<!--
+<use>
+	<flag name="flag">Description of how USE='flag' affects this package</flag>
+	<flag name="userland_GNU">Description of how USERLAND='GNU' affects this
+		package</flag>
+	<flag name="aspell">Uses <pkg>app-text/aspell</pkg> for spell checking.
+		Requires an installed dictionary from <cat>app-dicts</cat></flag>
+</use>
+-->
+</pkgmetadata>

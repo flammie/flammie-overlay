@@ -1,0 +1,13 @@
+diff -u -Naur a/Makefile b/Makefile
+--- a/Makefile	2016-01-05 05:04:05.158892293 +0000
++++ b/Makefile	2016-01-05 05:04:57.018964726 +0000
+@@ -6,7 +6,8 @@
+ all: nc 
+ 
+ install: nc
+-	cp ocastem /usr/bin/
++	install -d $(INSTALLPREFIX)/usr/bin
++	install -m 755 ocastem $(INSTALLPREFIX)/usr/bin/
+ 
+ uninstall:
+ 	rm -f /usr/bin/ocastem
