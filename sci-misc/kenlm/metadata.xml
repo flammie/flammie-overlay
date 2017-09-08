@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+	<email>flammie@gentoo.org</email>
+	<description>Overlay maintainer</description>
+</maintainer>
+<longdescription>
+	KenLM is fast and efficient tool for creating and using n-gram language
+	models.
+</longdescription>
+<!--<use>
+	<flag name="aspell">Uses <pkg>app-text/aspell</pkg> for spell checking.
+		Requires an installed dictionary from <cat>app-dicts</cat></flag>
+	<flag name="flag">Description of how USE='flag' affects this package</flag>
+	<flag name="userland_GNU">Description of how USERLAND='GNU' affects this
+		package</flag>
+</use>-->
+</pkgmetadata>
