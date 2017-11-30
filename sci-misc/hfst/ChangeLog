@@ -2,6 +2,11 @@
 # Copyright 1999-2017 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+*hfst-3.13.0 (30 Nov 2017)
+
+  30 Nov 2017; Flammie Pirinen <flammie@gentoo.org> +hfst-3.13.0.ebuild:
+  sci-misc/hfst: version bump to 3.13
+
   30 Nov 2017; Flammie Pirinen <flammie@gentoo.org> -hfst-3.8.3.ebuild,
   -hfst-3.9.0.ebuild, metadata.xml:
   sci-misc/hfst: remove old versions
