@@ -18,6 +18,6 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
 src_configure() {
-	./autogen.sh || die "autogen failed"
+	./autogen.sh || die "autogen failed"
 	econf $(use_enable static-libs static)
 }
