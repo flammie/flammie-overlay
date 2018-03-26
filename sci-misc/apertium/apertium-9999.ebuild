@@ -2,15 +2,14 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit subversion
-ESVN_REPO_URI="http://svn.code.sf.net/p/apertium/svn/trunk/${PN}"
-ESVN_PROJECT="${PN}"
+inherit git-r3
+EGIT_REPO_URI="https://github.com/apertium/${PN}"
 DESCRIPTION="Shallow-transfer machine Translation engine and toolbox"
 HOMEPAGE="http://apertium.sourceforge.net/"
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 
 RDEPEND="
 	dev-libs/libxslt
