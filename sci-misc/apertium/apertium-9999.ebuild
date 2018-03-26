@@ -22,4 +22,5 @@ DEPEND="${RDEPEND}
 
 src_configure() {
 	./autogen.sh || die "autogen failed"
+	econf
 }
