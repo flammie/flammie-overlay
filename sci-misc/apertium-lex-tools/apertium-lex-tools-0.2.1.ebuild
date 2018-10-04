@@ -1,15 +1,15 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 
 inherit autotools
 DESCRIPTION="Lexical selection utilities for apertium toolchain"
 HOMEPAGE="http://apertium.sf.net/"
-SRC_URI="mirror://sourceforge/apertium/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/apertium/${PN}/releases/download/v${PV}/${P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64"
 IUSE=""
 #RESTRICT="strip"
 
@@ -20,7 +20,6 @@ RDEPEND="${COMMON_DEPEND}"
 #S=${WORKDIR}/${P}
 
 src_prepare() {
-	sed -i -e 's/lttoolbox-3.2/lttoolbox/' \
-		-e 's/apertium-3.2/apertium/' configure.ac || die "sed failed"
+	eapply_user
 	eautoreconf
 }
