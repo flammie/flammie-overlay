@@ -14,7 +14,10 @@ IUSE=""
 #RESTRICT="strip"
 
 COMMON_DEPEND=""
-DEPEND="${COMMON_DEPEND}"
+DEPEND="${COMMON_DEPEND}
+	>=sci-misc/lttoolbox-3.5.0
+	>=sci-misc/apertium-3.5.2
+"
 RDEPEND="${COMMON_DEPEND}"
 
 #S=${WORKDIR}/${P}
