@@ -16,7 +16,8 @@ COMMON_DEPEND=">=sci-misc/apertium-3.5.2
 DEPEND="${COMMON_DEPEND}"
 RDEPEND="${COMMON_DEPEND}"
 
-
-src_configure() {
+src_prepare() {
 	./autogen.sh || die "autogen failed"
+	default_src_prepare
 }
+
