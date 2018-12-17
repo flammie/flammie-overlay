@@ -2,9 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit subversion
-ESVN_REPO_URI="http://svn.code.sf.net/p/apertium/svn/branches/${PN}"
-ESVN_PROJECT="${PN}"
+inherit git-r3
+EGIT_REPO_URI="https://github.com/apertium/apertium-separable"
 DESCRIPTION="Apertium module for separable words"
 HOMEPAGE="https://wiki.apertium.org/"
 LICENSE="GPL-3+"
