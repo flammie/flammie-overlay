@@ -11,8 +11,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-COMMON_DEPEND=">=sci-misc/apertium-3.5
-	>=sci-misc/lttoolbox-3.4"
+COMMON_DEPEND=">=sci-misc/apertium-3.5.2
+	>=sci-misc/lttoolbox-3.5"
 DEPEND="${COMMON_DEPEND}"
 RDEPEND="${COMMON_DEPEND}"
 
