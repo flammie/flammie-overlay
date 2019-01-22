@@ -15,7 +15,8 @@ KEYWORDS="~amd64"
 IUSE="+zip +xml test"
 
 COMMON_DEPEND="zip? ( >=app-arch/libarchive-3 )
-	zip? ( xml? ( >dev-cpp/libxmlpp-2.6 ) )"
+	zip? ( xml? ( >dev-cpp/libxmlpp-2.6 ) )
+	<dev-libs/icu-61"
 DEPEND="${COMMON_DEPEND}
 	test? ( sci-misc/hfst )
 	zip? ( virtual/pkgconfig )
