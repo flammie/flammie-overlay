@@ -19,7 +19,7 @@ KEYWORDS="~x86 ~amd64"
 
 IUSE=""
 
-DEPEND="dev-libs/icu
+DEPEND="<dev-libs/icu-61
 	dev-libs/boost"
 RDEPEND="${DEPEND}"
 

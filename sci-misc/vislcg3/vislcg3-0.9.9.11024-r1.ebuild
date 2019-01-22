@@ -1,26 +1,20 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 EAPI=5
 
-inherit cmake-utils
-
-MY_PN=cg3
-MY_PV=1.1.0~r12312
-MY_P=${MY_PN}-${MY_PV}
+inherit cmake-utils subversion
 
 DESCRIPTION="Free parser and runner for Constraint Grammars"
 HOMEPAGE="http://beta.visl.sdu.dk/"
-SRC_URI="http://beta.visl.sdu.dk/download/${PN}/${MY_P}.tar.bz2"
+ESVN_REPO_URI="http://beta.visl.sdu.dk/svn/visl/tools/vislcg3/trunk/@11024"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS=""
 
 IUSE=""
 
-DEPEND="dev-libs/icu
+DEPEND="<dev-libs/icu-61
 	dev-libs/boost"
 RDEPEND="${DEPEND}"
-
-S=${WORKDIR}/${MY_P}

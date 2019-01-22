@@ -7,7 +7,7 @@ inherit cmake-utils subversion
 
 DESCRIPTION="Free parser and runner for Constraint Grammars"
 HOMEPAGE="http://beta.visl.sdu.dk/"
-ESVN_REPO_URI="http://beta.visl.sdu.dk/svn/visl/tools/vislcg3/trunk/@11024"
+ESVN_REPO_URI="http://beta.visl.sdu.dk/svn/visl/tools/vislcg3/trunk/@10730"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -15,6 +15,6 @@ KEYWORDS=""
 
 IUSE=""
 
-DEPEND="dev-libs/icu
+DEPEND="<dev-libs/icu-61
 	dev-libs/boost"
 RDEPEND="${DEPEND}"
