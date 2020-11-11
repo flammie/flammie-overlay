@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>flammie-overlay</name>
+    <description lang="en">Flammie's overlay</description>
+    <homepage>http://github.com/flammie/flammie-overlay</homepage>
+    <owner type="person">
+      <email>flammie@iki.fi</email>
+      <name>Flammie</name>
+    </owner>
+    <source type="git">git://github.com/flammie/flammie-overlay.git</source>
+    <feed>http://github.com/flammie/flammie-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
+
