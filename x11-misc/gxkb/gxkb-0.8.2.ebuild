@@ -15,9 +15,9 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	dev-libs/glib
-	x11-libs/gtk+:3
-	x11-libs/libwnck:3
+	dev-libs/glib:2
+	x11-libs/gtk+:2
+	x11-libs/libwnck:1
 	x11-libs/libxklavier
 "
 DEPEND="
