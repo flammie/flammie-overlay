@@ -1,9 +1,9 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 DISTUTILS_OPTIONAL=1
-PYTHON_COMPAT=( python{2_7,3_5} )
+PYTHON_COMPAT=( python3_{7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Helsinki Finite-State Technology libraries and tools"
@@ -11,7 +11,7 @@ HOMEPAGE="http://hfst.sf.net/"
 SRC_URI="https://github.com/hfst/hfst/releases/download/v${PV}/${P}.tar.gz"
 LICENSE="GPL-2 GPL-3 Apache-2.0"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64"
 IUSE="minimal python"
 
 COMMON_DEPEND="python? ( ${PYTHON_DEPS} )"
