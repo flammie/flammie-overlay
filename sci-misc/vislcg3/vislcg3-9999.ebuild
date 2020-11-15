@@ -1,11 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+
 EAPI=7
 
-inherit cmake-utils
-
-MY_PN=cg3
+inherit cmake
 
 DESCRIPTION="Free parser and runner for Constraint Grammars"
 HOMEPAGE="http://beta.visl.sdu.dk/"
@@ -27,5 +25,4 @@ IUSE=""
 DEPEND=">=dev-libs/icu-50
 	>=dev-libs/boost-1.53.0"
 RDEPEND="${DEPEND}"
-S="$WORKDIR/cg3-${PV}"
-
+S="$WORKDIR/vislcg3-${PV}"
