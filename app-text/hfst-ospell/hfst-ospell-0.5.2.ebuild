@@ -3,7 +3,10 @@
 
 EAPI=7
 
-MY_P="hfstospell-${PV}"
+inherit autotools
+
+MY_P=hfstospell-${PV}
+
 DESCRIPTION="Small spell-checker library and tools based on FST technology"
 HOMEPAGE="https://hfst.github.io/"
 SRC_URI="https://github.com/hfst/hfst-ospell/releases/download/v${PV}/${MY_P}.tar.gz"
@@ -22,7 +25,10 @@ DEPEND="${COMMON_DEPEND}
 	xml? ( virtual/pkgconfig )"
 RDEPEND="${COMMON_DEPEND}"
 
-S="${WORKDIR}/${MY_P}"
+src_prepare() {
+	eapply_user
+	eautoreconf
+}
 
 src_configure() {
 	econf \
