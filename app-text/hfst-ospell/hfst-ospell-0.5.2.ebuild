@@ -1,7 +1,7 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 MY_P="hfstospell-${PV}"
 DESCRIPTION="Small spell-checker library and tools based on FST technology"
@@ -15,7 +15,7 @@ IUSE="+zip +xml test"
 
 COMMON_DEPEND="zip? ( >=app-arch/libarchive-3 )
 	zip? ( xml? ( dev-cpp/libxmlpp:2.6 ) )
-	<dev-libs/icu-61"
+	dev-libs/icu"
 DEPEND="${COMMON_DEPEND}
 	test? ( sci-misc/hfst )
 	zip? ( virtual/pkgconfig )
