@@ -1,33 +1,38 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
-EAPI=5
 
-inherit versionator
-# FIXME: for versions with last part < 10 pad with zeroes
-# e.g 4 => 4000, 5.1 => 5100, 5.2.7 => 5207.
-MY_PV=$(delete_all_version_separators)
+EAPI=6
 
 DESCRIPTION="Speech analysis and synthesis"
 HOMEPAGE="http://praat.org/"
-SRC_URI="http://www.fon.hum.uva.nl/praat/${PN}${MY_PV}_sources.tar.gz"
+SRC_URI="https://github.com/praat/praat/archive/v6.1.38.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
-COMMON_DEPEND="x11-libs/gtk+:2"
+COMMON_DEPEND="x11-libs/gtk+:3
+dev-libs/atk
+dev-libs/glib
+media-libs/fontconfig
+media-libs/freetype
+media-libs/opusfile
+x11-libs/cairo
+x11-libs/gdk-pixbuf
+x11-libs/pango
+"
 DEPEND="${COMMON_DEPEND}"
 RDEPEND="${COMMON_DEPEND}
 media-fonts/sil-charis
 media-fonts/sil-doulos"
 
-S="${WORKDIR}/sources_${MY_PV}"
-
 src_prepare() {
+	eapply_user
 	# TODO: following line should be updated for non-linux etc. builds
 	# (Flammie does not have testing equipment)
-	cp "${S}/makefiles/makefile.defs.linux.alsa" "${S}/makefile.defs"
+	cp "${S}/makefiles/makefile.defs.linux.pulse" "${S}/makefile.defs"
+	# FIXME: commented out upstream??
+	sed -i -e 's/$(LIBS)/external/opusfile/libopusfile.a \0/' Makefile
 }
 
 src_install() {
