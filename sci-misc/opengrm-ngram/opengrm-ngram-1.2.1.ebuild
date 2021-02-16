@@ -1,15 +1,15 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+
 EAPI=5
 
 inherit autotools eutils
 DESCRIPTION="Google's open source finite-state n-gram models"
 HOMEPAGE="http://openfst.org/"
-SRC_URI="http://openfst.cs.nyu.edu/twiki/pub/GRM/NGramDownload/${P}.tar.gz"
+SRC_URI="http://www.opengrm.org/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.2.1.tar.gz"
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 COMMON_DEPEND=">=sci-misc/openfst-1.4"
