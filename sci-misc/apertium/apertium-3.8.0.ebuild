@@ -1,7 +1,7 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 inherit autotools
 DESCRIPTION="Shallow-transfer machine Translation engine and toolbox"
 HOMEPAGE="http://apertium.sourceforge.net/"
@@ -11,15 +11,21 @@ SLOT="0"
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
 
-RDEPEND="
+COMMON_DEPEND="dev-libs/utfcpp
 	dev-libs/libxslt
 	dev-libs/libpcre[cxx]
 	>=sci-misc/lttoolbox-3.3
 	virtual/libiconv"
-DEPEND="${RDEPEND}
+RDEPEND="${COMMON_DEPEND}"
+DEPEND="${COMMON_DEPEND}
 	virtual/pkgconfig"
 
 src_prepare() {
 	eapply_user
 	eautoreconf
+}
+
+src_configure() {
+	local -x CPPFLAGS="${CPPFLAGS} -I${ESYSROOT}/usr/include/utf8cpp"
+	default
 }
