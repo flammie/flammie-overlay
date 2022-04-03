@@ -1,9 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+
 EAPI=7
 
-inherit cmake-utils
+inherit cmake
 
 MY_PN=cg3
 
@@ -20,7 +20,7 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64 ~arm"
+KEYWORDS="~amd64 ~arm ~x86"
 
 IUSE=""
 
@@ -28,4 +28,3 @@ DEPEND=">=dev-libs/icu-50
 	>=dev-libs/boost-1.53.0"
 RDEPEND="${DEPEND}"
 S="$WORKDIR/cg3-${PV}"
-
