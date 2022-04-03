@@ -1,12 +1,12 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit autotools
 DESCRIPTION="Lexical selection utilities for apertium toolchain"
 HOMEPAGE="http://apertium.sf.net/"
-SRC_URI="https://github.com/apertium/${PN}/releases/download/v${PV}/${P}.tar.gz"
+SRC_URI="https://github.com/apertium/${PN}/releases/download/v${PV}/${P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
@@ -25,4 +25,9 @@ RDEPEND="${COMMON_DEPEND}"
 src_prepare() {
 	eapply_user
 	eautoreconf
+}
+
+src_configure() {
+	local -x CPPFLAGS="${CPPFLAGS} -I${ESYSROOT}/usr/include/utf8cpp"
+	default
 }
