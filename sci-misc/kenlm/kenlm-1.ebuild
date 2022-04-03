@@ -1,8 +1,9 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-EAPI=6
 
-inherit cmake-utils
+EAPI=7
+
+inherit cmake
 
 DESCRIPTION="Estimates, filters, and queries language models"
 HOMEPAGE="https://kheafield.com/code/kenlm/"
