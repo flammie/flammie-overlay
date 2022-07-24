@@ -1,9 +1,9 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
 DISTUTILS_OPTIONAL=1
-PYTHON_COMPAT=( python3_{7,8} )
+PYTHON_COMPAT=( python3_{8,9,10} )
 inherit distutils-r1  autotools
 
 DESCRIPTION="Helsinki Finite-State Technology libraries and tools"
@@ -33,6 +33,7 @@ src_compile() {
 	default_src_compile
 	if use python ; then
 		cd "${S}/python"
+		python_foreach_impl esetup.py build_ext --inplace --local-hfst
 		distutils-r1_src_compile
 	fi
 }
