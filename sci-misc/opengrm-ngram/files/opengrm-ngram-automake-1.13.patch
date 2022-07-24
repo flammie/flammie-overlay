@@ -4,8 +4,9 @@ diff -u -Naur opengrm-ngram-1.2.1~/configure.ac opengrm-ngram-1.2.1/configure.ac
 @@ -6,6 +6,7 @@
  AC_PROG_CXX
  AC_DISABLE_STATIC
- AC_PROG_LIBTOOL
+-AC_PROG_LIBTOOL
 +AM_PROG_AR
++LT_INIT
  
  AC_CONFIG_HEADERS([config.h])
  AC_CONFIG_SRCDIR([src/include/ngram/ngram-model.h])
