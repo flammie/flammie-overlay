@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>flammie@iki.fi</email>
+    <description>Primary maintainer</description>
+  </maintainer>
+	<longdescription>
+		Regression test tools for apertium dictionaries.
+  </longdescription>
+</pkgmetadata>
