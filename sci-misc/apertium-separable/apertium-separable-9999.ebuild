@@ -8,7 +8,7 @@ DESCRIPTION="Apertium module for separable words"
 HOMEPAGE="https://wiki.apertium.org/"
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 COMMON_DEPEND=">=sci-misc/apertium-3.5.2
