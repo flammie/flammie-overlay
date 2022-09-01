@@ -3,11 +3,6 @@
 
 EAPI=7
 
-inherit eutils cvs findlib
-
-DESCRIPTION="Hungarian morphological analyser written in ocaml"
-HOMEPAGE="http://mokk.bme.hu/resources/hunmorph/"
-
 ECVS_AUTH="pserver"
 ECVS_SERVER="cvs.mokk.bme.hu:/local/cvs"
 ECVS_MODULE="${PN}"
@@ -15,11 +10,16 @@ ECVS_USER="anonymous"
 ECVS_PASS="anonymous"
 ECVS_CVS_OPTIONS="-d"
 
+inherit cvs findlib
+
+DESCRIPTION="Hungarian morphological analyser written in ocaml"
+HOMEPAGE="http://mokk.bme.hu/resources/hunmorph/"
+
 LICENSE="CC-BY-2.5"
 
 SLOT="0"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 COMMON_DEPEND=
@@ -31,9 +31,9 @@ S=${WORKDIR}/${PN}
 
 src_prepare() {
 	cd "${S}"/src/wrappers/ocamorph
-	epatch "${FILESDIR}"/ocamorph-install-prefix.patch
+	eapply "${FILESDIR}"/ocamorph-install-prefix.patch
 	cd "${S}"/src/wrappers/ocastem
-	epatch "${FILESDIR}"/ocastem-install-prefix.patch
+	eapply "${FILESDIR}"/ocastem-install-prefix.patch
 }
 
 src_compile() {
