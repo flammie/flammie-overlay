@@ -8,15 +8,7 @@
 </maintainer>
 <longdescription>
 	A finite-state library for some open source tools in the category of
-	finite-state morphology (NLP)
+	finite-state morphology (NLP). Helsinki Finite-State Technology contains
+	both libraries and tools for most common finite-state NLP applications.
 </longdescription>
-<!--
-<use>
-	<flag name="flag">Description of how USE='flag' affects this package</flag>
-	<flag name="userland_GNU">Description of how USERLAND='GNU' affects this
-		package</flag>
-	<flag name="aspell">Uses <pkg>app-text/aspell</pkg> for spell checking.
-		Requires an installed dictionary from <cat>app-dicts</cat></flag>
-</use>
--->
 </pkgmetadata>
