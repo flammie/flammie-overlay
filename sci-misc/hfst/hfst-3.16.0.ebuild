@@ -3,7 +3,7 @@
 
 EAPI=7
 DISTUTILS_OPTIONAL=1
-PYTHON_COMPAT=( python3_{8,9,10} )
+PYTHON_COMPAT=( python3_{8,9,10,11} )
 inherit distutils-r1  autotools
 
 DESCRIPTION="Helsinki Finite-State Technology libraries and tools"
