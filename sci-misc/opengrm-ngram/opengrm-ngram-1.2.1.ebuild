@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit autotools eutils
+inherit autotools
 DESCRIPTION="Google's open source finite-state n-gram models"
 HOMEPAGE="http://openfst.org/"
 SRC_URI="http://www.opengrm.org/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.2.1.tar.gz"
