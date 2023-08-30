@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils perl-module latex-package
+inherit perl-module latex-package
 
 DESCRIPTION="A modern (La)TeX to XML/HTML conversion tool"
 HOMEPAGE="http://dlmf.nist.gov/LaTeXML/"
