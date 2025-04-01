@@ -1,7 +1,7 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit perl-module latex-package
 
@@ -44,12 +44,17 @@ RDEPEND="${DEPEND}"
 
 myconf="TEXMF=/usr/share/texmf-site/"
 
+src_configure() {
+	perl-module_src_configure
+	perl Makefile.PL DESTDIR=${D} INSTALLDIRS=vendor INST_MAN3DIR=none INST_MAN1DIR=none
+}
+
 src_install() {
 	emake install || die "emake install failed"
 	perl_delete_module_manpages
 	perl_delete_localpod
 	perl_delete_packlist
-	rm "${D}/usr/share/texmf-site/tex/latex/latexml/.packlist"
+	rm "${D}/usr/local/share/texmf/tex/latex/latexml/.packlist"
 	perl_remove_temppath
 
 	dodoc manual.pdf INSTALL Changes
