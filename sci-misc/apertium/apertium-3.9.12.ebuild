@@ -14,7 +14,7 @@ KEYWORDS="~amd64 ~x86"
 COMMON_DEPEND="dev-libs/utfcpp
 	dev-libs/libxslt
 	dev-libs/libpcre[cxx]
-	>=sci-misc/lttoolbox-3.3
+	>=sci-misc/lttoolbox-3.7.2
 	virtual/libiconv"
 RDEPEND="${COMMON_DEPEND}"
 DEPEND="${COMMON_DEPEND}
