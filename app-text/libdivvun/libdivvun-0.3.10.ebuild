@@ -1,7 +1,7 @@
 # Copyright 1999-2022 Gentoo Authors
 
 EAPI=7
-PYTHON_COMPAT=( python3_10 python3_11 )
+PYTHON_COMPAT=( python3_10 python3_11 python3_12 )
 inherit autotools python-r1
 
 DESCRIPTION="Language technology tool library from Divvun"
