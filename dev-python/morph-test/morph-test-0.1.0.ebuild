@@ -15,8 +15,7 @@ HOMEPAGE="https://github.com/divvun/morph-test"
 
 LICENSE="CC0-1.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 RDEPEND="dev-python/pyyaml"
 BDEPEND="dev-python/poetry"
-
