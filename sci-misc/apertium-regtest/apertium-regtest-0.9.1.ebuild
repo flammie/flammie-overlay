@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-PYTHON_COMPAT=( python3_10 python3_11 python3_12 python3_13 )
-PYTHON_SINGLE_TARGET=python3_11
+PYTHON_COMPAT=( python3_12 python3_13 python3_14 )
+PYTHON_SINGLE_TARGET=python3_13
 inherit autotools python-single-r1
 
 DESCRIPTION="Apertium tool for regression testing dictionaries"
