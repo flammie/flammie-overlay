@@ -12,12 +12,13 @@ SRC_URI="https://github.com/apertium/apertium-regtest/releases/download/v${PV}/$
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 COMMON_DEPEND="${PYTHON_DEPS}"
 RDEPEND="${COMMON_DEPEND}"
 DEPEND="${COMMON_DEPEND}
 	virtual/pkgconfig"
+
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_prepare() {
 	eapply_user
