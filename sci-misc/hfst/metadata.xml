@@ -11,5 +11,7 @@
 	finite-state morphology (NLP). Helsinki Finite-State Technology contains
 	both libraries and tools for most common finite-state NLP applications.
 </longdescription>
-<remote-id type="github">hfst/hfst</remote-id>
+<upstream>
+	<remote-id type="github">hfst/hfst</remote-id>
+</upstream>
 </pkgmetadata>
